@@ -2,4 +2,4 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return HttpResponse("main index page")
+    return HttpResponse("main index page fuck uoft")
