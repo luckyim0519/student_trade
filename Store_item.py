@@ -4,8 +4,7 @@ File made by Lucky and Justin(Taehee) Cha
 All copyrighted materials are owned by Lucky and Justin. 
 2022, May, 11th
 """
-
-from Users import User
+from django.contrib.auth.models import User
 
 
 class Store_item():
@@ -23,7 +22,7 @@ class Store_item():
     """
     _name: str
     _id: int
-    _og_user: User
+    _og_user: .User
 
     def __init__(self, n: str, i: int, u: User) -> None:
         self._name = n
