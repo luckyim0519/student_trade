@@ -22,7 +22,7 @@ class Store_item():
     """
     _name: str
     _id: int
-    _og_user: .User
+    _og_user: User
 
     def __init__(self, n: str, i: int, u: User) -> None:
         self._name = n
