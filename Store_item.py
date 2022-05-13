@@ -16,6 +16,10 @@ class Store_item():
     _name: name of the item
     _id: id of the item
     _og_user: the user that posted this Store_item
+
+    ==== Representation Invariant ===
+    _id is always unique to only this Store_item object. 
+    No other Store_item have the same _id as this Store_item
     """
     _name: str
     _id: int
@@ -25,3 +29,6 @@ class Store_item():
         self._name = n
         self._id = i
         self._og_user = u
+
+    def __eq__(self, __o: object) -> bool:
+        return self._id == __o
