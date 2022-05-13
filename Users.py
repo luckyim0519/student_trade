@@ -4,6 +4,9 @@ File made by Lucky and Justin(Taehee) Cha
 All copyrighted materials are owned by Lucky and Justin. 
 2022, May, 11th
 """
+from Store_item import Store_item
+
+
 
 class User():
     """
@@ -48,3 +51,9 @@ class User():
         return the name of this User
         """
         return self._name
+
+    def buy_item(self, item: Store_item) -> bool:
+        """
+        Return True iff Store_item in item has been bought successfully by this User
+        """
+        #ToDo 
